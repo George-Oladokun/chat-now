@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/bootstrap-5.2.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color:white;">
+    <div class="container shadow">
+        <img src="/pngtree-technology-earth-internet-technology-line-vector-element-png-image_4207719.png"
+            style="height: 7vh; border: 2px solid aqua;" alt="">
+        <br>
+        <h2 style="background-color: aqua; font-size: 40px; color:black; text-align: center; font-family: Arial, Helvetica, sans-serif;">CHATNOW</h2>
+        <div class="userInput">
+            <div class="allName d-flex" style="gap: 10px;">
+                <div class="surname w-100">
+                    <p style="font-size: 19px;">SURNAME</p>
+                    <input type="text" name="Name" id="">
+                </div>
+                <div class="firstname  w-100">
+                    <p style="font-size: 19px;">FIRST NAME</p>
+                    <input type="text" name="Name" id="">
+                </div>
+            </div>
+            <div class="gender mt-2" style="border-bottom: 1px solid grey;">
+                <p style=" font-size: 19px; position: relative; top: 20px;" class="text-center">GENDER</p>
+                <div class="d-flex rad" style="justify-content: center; gap: 33%;">
+                    <div >
+                        Male
+                        <input type="radio" name="gender" id="" class="radio">
+                    </div>
+                    <div>
+                        Female
+                        <input type="radio" name="gender" id="" class="radio">
+                    </div>
+                    <div>
+                        Custom
+                        <input type="radio" name="gender" id="" class="radio">
+                    </div>
+                </div>
+            </div>
+            <div class="birth mt-4">
+                <p style="font-size: 19px;">DATE OF BIRTH</p>
+                <input type="date" name="date" id="">
+            </div>
+            <div class="d-flex mt-4" style="gap: 10px;">
+                <div class="email w-100">
+                    <p style="font-size: 19px;">EMAIL/NUMBER</p>
+                    <input type="email" name="" id="">
+                </div>
+                <div class="password w-100">
+                    <p style="font-size: 19px;">PASSWORD</p>
+                    <input type="password" placeholder="password">
+                </div>
+            </div>
+        </div>
+        <div class="purpose">
+            <p style="font-size: 19;">Your purpose for joining this website  </p>
+            <textarea name="" id="" cols="30" rows="1"></textarea>
+        </div>
+        <div class="sign">
+            <button style="height: 40px; width: 200px;  color: blue; background-color: aqua;">Sign Up</button>
+        </div>
+    </div>
+    </form>
+    <style>
+        input{
+            width: 100%;
+            height: 30px;
+        }
+        .radio{
+            width: auto;
+            position: relative;
+            top: 15px;
+        }
+        .container{
+            width: 75%;
+        }
+        .sign{
+            text-align: center;
+        }
+        @media (max-width:600px) {
+            .d-flex{
+                display: block !important;
+            }
+            .container{
+                width: 95%;
+            }
+            .rad{
+                display: flex !important;
+                margin-top: 30px;
+                gap: 40px !important;
+            }
+        }
+    </style>
+</body>
+
+</html>
